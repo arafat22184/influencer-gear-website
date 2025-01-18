@@ -51,6 +51,7 @@
   --card-title: #18191f;
   --card-shadow: rgba(0, 0, 0, 0.15);
   --bg-txt-c: #fff;
+  --icon-bg: #22223c;
 }
 
 .max-width {
@@ -144,8 +145,7 @@
 /* SPONSORES STYLES */
 
 .sponsore-container {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
   justify-content: space-between;
   margin-top: 70px;
   padding: 36px 0px;
@@ -257,7 +257,7 @@
   max-width: 262px;
   margin: 0 auto;
   text-align: center;
-  color: #fff;
+  color: var(--bg-txt-c);
 }
 
 .foot-title {
@@ -275,7 +275,7 @@
 
 .foot-icon {
   margin-right: 16px;
-  background-color: #22223c;
+  background-color: var(--icon-bg);
   padding: 8px;
   border-radius: 50%;
 }
@@ -311,7 +311,10 @@
 
   /* SPONSORE STYLES */
   .sponsore-container {
-    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     border: none;
   }
 
